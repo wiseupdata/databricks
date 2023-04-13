@@ -108,7 +108,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 ```
 curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' -d '
 {
-    "name": "Job task run - TMP",
+    "name": "Job task run Hist - Manually",
     "access_control_list": [
             {
                 "user_name": "'"$USER"'",
