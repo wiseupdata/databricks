@@ -26,6 +26,7 @@
 Databricks Utils
 </h1>
 Useful commands to handle Databricks.
+Shell commands tested 🎯: Ubuntu and Wsl2 with Windows 11 (compatible with all Ubuntu and Debian)
 <br>
 <br>
 <br>
