@@ -25,7 +25,7 @@
 <h1>
 Databricks Utils
 </h1>
-Databricks Utils
+Useful commands to handle Databricks.
 <br>
 <br>
 <br>
