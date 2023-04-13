@@ -117,6 +117,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X PATCH -H 'Content-Type: applicatio
 
 </details>
 
+<br>
 
 🐍 Python 
 
