@@ -286,6 +286,7 @@ echo "wait"
 1. [API examples by Databricks](https://docs.databricks.com/api-explorer/workspace/clusters/createhttps://learn.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/clusters)
 1. [Delta rollback](https://delta.io/blog/2022-10-03-rollback-delta-lake-restore/)
 1. [API examples by Databricks - Create Jobs](https://docs.databricks.com/dev-tools/api/latest/jobs.html#operation/JobsCreate)
+1. [Emojis](https://github.com/wiseupdata/emojis)
 
 <br><br>
 ---
