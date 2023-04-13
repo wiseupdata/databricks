@@ -39,7 +39,7 @@ Useful commands to handle Databricks.
 
 <details>
 <summary>
-  API examples, click here🧑‍💻
+  API cluster examples, click here🧑‍💻
 </summary>
 <details>
 <summary>
@@ -97,12 +97,12 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 --data '{"cluster_id": "0127-010001-9datovv7", "owner_username": $USER }' | jq .
 ```
 
-### 🕵️ Get user permissions levels
+### 🕵️ Get user permissions levels in the cluster
 ```
 curl -H "Authorization: Bearer $API_TOKEN" -X GET -H 'Content-Type: application/json' $API_END_POINT/permissions/clusters/0110-010002-j8sq1p9s/permissionLevels | jq .
 ```
 
-### 🪁 Get permissions
+### 🪁 Get permissions to the cluster
 ```
 curl -H "Authorization: Bearer $API_TOKEN" -X GET -H 'Content-Type: application/json' $API_END_POINT/permissions/clusters/0110-010002-j8sq1p9s | jq .
 ```
@@ -123,7 +123,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X PATCH -H 'Content-Type: applicatio
 
 <details>
 <summary>
-  API examples, click here🔗
+  API cluster examples, click here🔗
 </summary>
 
 
