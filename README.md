@@ -120,7 +120,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X PATCH -H 'Content-Type: applicatio
 
 <details>
 <summary>
-  API examples, click here🧑‍💻
+  API examples, click here🔗
 </summary>
 
 
