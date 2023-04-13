@@ -95,6 +95,8 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 ' $API_END_POINT/clusters/create
 ```
 
+<br>
+
 ### 🌠 Create a Job Workflow with Task
 
 > - Manually trigger
@@ -164,7 +166,8 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 }
 ' $API_END_POINT/jobs/create
 ```
-> base_parameters are the parameter that you need to pass to your notebook, Widgets! [Optional]
+
+<br>
 
 ### 🎢Trigger a Job, run a job
 ```
@@ -174,6 +177,8 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 }
 ' $API_END_POINT/jobs/run-now
 ```
+
+<br>
 
 ### 🦕 Update Job permissions
 ```
@@ -189,6 +194,8 @@ curl -H "Authorization: Bearer $API_TOKEN" -X PATCH -H 'Content-Type: applicatio
 ' $API_END_POINT/preview/permissions/jobs/815516903186825
 ```
 
+<br>
+
 ### ☢️ Delete a Job from the workflow.
 ```
 curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' -d '
@@ -197,6 +204,8 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 }
 ' $API_END_POINT/jobs/delete
 ```
+
+<br>
 
 ### 💣 Delete a cluster
 ```
@@ -207,11 +216,15 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 ' $API_END_POINT/clusters/delete
 ```
 
+<br>
+
 ### 🤖 Get cluster config 
 ```
 curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' $API_END_POINT/clusters/get \
 --data '{ "cluster_id": "0111-010002-61n4lz49" }' | jq .
 ```
+
+<br>
 
 ### 👣 Change the owner of the cluster
 ```
@@ -219,15 +232,21 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 --data '{"cluster_id": "0127-010001-9datovv7", "owner_username": $USER }' | jq .
 ```
 
+<br>
+
 ### 🕵️ Get user permissions levels in the cluster
 ```
 curl -H "Authorization: Bearer $API_TOKEN" -X GET -H 'Content-Type: application/json' $API_END_POINT/permissions/clusters/0110-010002-j8sq1p9s/permissionLevels | jq .
 ```
 
+<br>
+
 ### 🪁 Get permissions to the cluster
 ```
 curl -H "Authorization: Bearer $API_TOKEN" -X GET -H 'Content-Type: application/json' $API_END_POINT/permissions/clusters/0110-010002-j8sq1p9s | jq .
 ```
+
+<br>
 
 ### 🤝 Give permissions to another user in your cluster
 ```
