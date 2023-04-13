@@ -37,7 +37,7 @@ Useful commands to handle Databricks.
 
 <details>
 <summary>
-  Click here for API examples🧑‍💻
+  API examples, click here🧑‍💻
 </summary>
 <details>
 <summary>
@@ -120,7 +120,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X PATCH -H 'Content-Type: applicatio
 
 <details>
 <summary>
-  Click here for API examples🧑‍💻
+  API examples, click here🧑‍💻
 </summary>
 
 
