@@ -77,7 +77,7 @@ echo $API_END_POINT
 
 <br>
 
-# ☄️ Commands
+# ☄️ Cluster commands
 
 ### 💣 Delete a cluster
 ```
