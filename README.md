@@ -161,8 +161,8 @@ echo "wait"
 
 1. [Wise Up Data](https://github.com/wiseupdata)
 1. [Delta rollback](https://delta.io/blog/2022-10-03-rollback-delta-lake-restore/)
-1. [Microsoft examples](https://learn.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/clusters)
-1. [Databricks examples](https://docs.databricks.com/api-explorer/workspace/clusters/createhttps://learn.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/clusters)
+1. [API examples by Microsoft](https://learn.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/clusters)
+1. [API examples by Databricks](https://docs.databricks.com/api-explorer/workspace/clusters/createhttps://learn.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/clusters)
 
 <br><br>
 ---
