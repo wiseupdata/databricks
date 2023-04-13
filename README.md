@@ -79,16 +79,38 @@ echo $API_END_POINT
 
 # ☄️ Cluster commands
 
+
+### 🌱 Create a simple cluster
+```
+curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' -d '
+{
+  "cluster_name": "my-cluster",
+  "spark_version": "11.3.x-scala2.12",
+  "node_type_id": "Standard_D3_v2",
+  "spark_conf": {
+    "spark.speculation": true
+  },
+   "autoscale": {
+        "min_workers": 1,
+        "max_workers": 4
+    }
+}
+' $API_END_POINT/clusters/create
+```
+
 ### 💣 Delete a cluster
 ```
-curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' \
- -d '{ "cluster_id": "0407-081042-7m1u0ojm" }' $API_END_POINT/clusters/delete
+curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' -d '
+{ 
+  "cluster_id": "0411-102222-j1tg6v6a" 
+}
+' $API_END_POINT/clusters/delete
 ```
 
 ### 🤖 Get cluster config 
 ```
 curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' $API_END_POINT/clusters/get \
---data '{ "cluster_id": "0111-010002-61n4lt49" }' | jq .
+--data '{ "cluster_id": "0111-010002-61n4lz49" }' | jq .
 ```
 
 ### 👣 Change the owner of the cluster
