@@ -28,12 +28,10 @@ Databricks Utils
 Useful commands to handle Databricks 🚀. <br>
 Shell commands tested 🎯: <br>
 
->  - Ubuntu 
->  - Wsl2 with Windows 11 
->  - compatible with all Ubuntu and Debian
+- Ubuntu 
+- Wsl2 with Windows 11 
+- compatible with all Ubuntu and Debian
 
-<br>
-<br>
 <br>
 <br>
 <br>
