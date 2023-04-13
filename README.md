@@ -33,9 +33,6 @@ Shell commands tested 🎯: <br>
 - compatible with all Ubuntu and Debian
 
 <br>
-<br>
-<br>
-
 
 🛠️ Shell commands 
 
