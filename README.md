@@ -95,6 +95,109 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 ' $API_END_POINT/clusters/create
 ```
 
+### 🌠 Create a Job Workflow with Task
+
+> - Manually trigger
+> - Single task 
+> - Unit Catalog enable
+> - Access control declared
+>    - First access_control_list is for the Job, the second it's for the new cluster.
+> - base_parameters are the parameter that you need to pass to your notebook, Widgets! [Optional]
+> - Notebook example
+
+```
+curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' -d '
+{
+    "name": "Your Job Name",
+    "access_control_list": [
+            {
+                "user_name": "'"$USER"'",
+                "permission_level": "CAN_MANAGE"
+            }
+        ],
+    "new_cluster": {
+        "autoscale": {
+            "min_workers": 1,
+            "max_workers": 4
+        },
+        "spark_version": "11.3.x-scala2.12",
+        "spark_conf": {
+            "spark.databricks.delta.preview.enabled": "true"
+        },
+        "azure_attributes": {
+            "first_on_demand": 1,
+            "availability": "ON_DEMAND_AZURE",
+            "spot_bid_max_price": -1
+        },
+        "node_type_id": "Standard_DS5_v2",
+        "driver_node_type_id": "Standard_DS5_v2",
+        "ssh_public_keys": [],
+        "custom_tags": {},
+        "cluster_log_conf": {
+            "dbfs": {
+                "destination": "dbfs:/cluster-logs"
+            }
+        },
+        "enable_elastic_disk": true,
+        "access_control_list": [
+            {
+                "user_name": "'"$USER"'",
+                "permission_level": "CAN_MANAGE"
+            }
+        ]
+    },
+    "notebook_task": {
+        "task_id": "Your task name",
+        "notebook_path": "/note_book_path",
+        "base_parameters": {
+            "clean_target_path": "True",
+            "force_z_order": "True",
+            "database": "your_db",
+            "env": "your_env",
+            "extraction_date": "2023-04-13",
+            "layer": "your_layer",
+            "legacy_path": "your_path_legacy",
+            "primary_key": "pk",
+            "table_name": "your_table_name"
+        }
+    }
+}
+' $API_END_POINT/jobs/create
+```
+> base_parameters are the parameter that you need to pass to your notebook, Widgets! [Optional]
+
+### 🎢Trigger a Job, run a job
+```
+curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' -d '
+{ 
+  "job_id":193011368839413
+}
+' $API_END_POINT/jobs/run-now
+```
+
+### 🦕 Update Job permissions
+```
+curl -H "Authorization: Bearer $API_TOKEN" -X PATCH -H 'Content-Type: application/json' -d '
+{ 
+   "access_control_list": [
+            {
+                "user_name": "'"$USER"'",
+                "permission_level": "CAN_MANAGE"
+            }
+        ]
+}
+' $API_END_POINT/preview/permissions/jobs/815516903186825
+```
+
+### ☢️ Delete a Job from the workflow.
+```
+curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' -d '
+{ 
+  "job_id": 2560589442453
+}
+' $API_END_POINT/jobs/delete
+```
+
 ### 💣 Delete a cluster
 ```
 curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' -d '
@@ -163,6 +266,7 @@ echo "wait"
 1. [API examples by Microsoft](https://learn.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/clusters)
 1. [API examples by Databricks](https://docs.databricks.com/api-explorer/workspace/clusters/createhttps://learn.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/clusters)
 1. [Delta rollback](https://delta.io/blog/2022-10-03-rollback-delta-lake-restore/)
+1. [API examples by Databricks - Create Jobs](https://docs.databricks.com/dev-tools/api/latest/jobs.html#operation/JobsCreate)
 
 <br><br>
 ---
