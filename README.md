@@ -32,8 +32,6 @@ Shell commands tested 🎯: <br>
 - Wsl2 with Windows 11 
 - compatible with all Ubuntu and Debian
 
-<br>
-
 🛠️ Shell commands 
 
 <details>
