@@ -52,7 +52,7 @@ Shell commands tested 🎯: <br>
 </details>
 <details>
 <summary>
- Credentials, click here 🗝️
+ Credentials set up! Click here 🗝️
 </summary>
 
 ### 🛂 Create a file with your credentials 
