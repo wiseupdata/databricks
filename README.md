@@ -51,10 +51,10 @@ Shell commands tested 🎯: <br>
 </details>
 <details>
 <summary>
- Credentials set up  🗝️ click!
+ Credentials set up 🗝️ click!
 </summary>
 
-### 🛂 Create a file with your credentials 
+#### 🛂 Create a file with your credentials 
 
 > credentials.sh [file example]
 ```
@@ -64,7 +64,8 @@ API_END_POINT="https://adb-11111111111111.1.azuredatabricks.net/api/2.0"
 USER="user@email.net"
 ```
 
-###  ⏳ Loading the credentials to environment
+#### ⏳ Load the credentials to environment
+
 ```
 # load
 source credentials.sh
