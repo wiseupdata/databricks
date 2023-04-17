@@ -81,7 +81,7 @@ echo $API_END_POINT
 
 <details>
 <summary>
-  Create a simple cluster 🌱 [click]
+  Create a simple cluster 🌱 click!
 </summary>
 
 ```
