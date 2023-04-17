@@ -230,7 +230,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 
 <details>
 <summary>
-  Create a Simple Job Workflow with a Task to a existent cluster 😍 click!
+  Create a Simple Job Workflow with a task to a existent cluster 😍 click!
 </summary>
 
 > - Manually trigger
