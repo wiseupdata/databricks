@@ -118,7 +118,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
         ],
     "notebook_task": {
         "task_id": "Your task name",
-        "notebook_path": "/note_book_path"
+        "notebook_path": "/Users/"'"$USER"'"/test"
     }
 }
 ' $API_END_POINT/jobs/create
