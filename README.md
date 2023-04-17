@@ -34,7 +34,6 @@ Shell commands tested 🎯: <br>
 
 
 <br>
-<br>
 
 # API cluster examples 🧑‍💻
 
@@ -73,6 +72,7 @@ source credentials.sh
 #check
 echo $API_END_POINT
 ```
+<br>
 <br>
 <br>
 
