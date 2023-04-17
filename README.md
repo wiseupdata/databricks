@@ -80,29 +80,29 @@ echo $API_END_POINT
 
 ## ☄️ Cluster commands
 
-<details>
-<summary>
-  🌱 Create a simple cluster, click here
-</summary>
+  <details>
+  <summary>
+    🌱 Create a simple cluster, click here
+  </summary>
 
-```
-curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' -d '
-{
-  "cluster_name": "my-cluster",
-  "spark_version": "11.3.x-scala2.12",
-  "node_type_id": "Standard_D3_v2",
-  "spark_conf": {
-    "spark.speculation": true
-  },
-   "autoscale": {
-        "min_workers": 1,
-        "max_workers": 4
-    }
-}
-' $API_END_POINT/clusters/create
-```
+  ```
+  curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' -d '
+  {
+    "cluster_name": "my-cluster",
+    "spark_version": "11.3.x-scala2.12",
+    "node_type_id": "Standard_D3_v2",
+    "spark_conf": {
+      "spark.speculation": true
+    },
+    "autoscale": {
+          "min_workers": 1,
+          "max_workers": 4
+      }
+  }
+  ' $API_END_POINT/clusters/create
+  ```
 
-</details>
+  </details>  
 
 <details>
 <summary>
