@@ -97,6 +97,36 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 
 <br>
 
+### 😍 Create a Simple Job Workflow with a Task
+
+> - Manually trigger
+> - Single task 
+> - Unit Catalog enable
+> - Access control declared
+> - Notebook example
+
+```
+curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' -d '
+{
+    "name": "Job task run - Manually",
+    "existing_cluster_id": "0131-135623-mx9o58uk",
+    "access_control_list": [
+            {
+                "user_name": "'"$USER"'",
+                "permission_level": "CAN_MANAGE"
+            }
+        ],
+    "notebook_task": {
+        "task_id": "Your task name",
+        "notebook_path": "/note_book_path"
+    }
+}
+' $API_END_POINT/jobs/create
+```
+
+<br>
+
+
 ### 🌠 Create a Job Workflow with Task
 
 > - Manually trigger
