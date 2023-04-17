@@ -77,7 +77,7 @@ echo $API_END_POINT
 
 </details>
 
-  ### ☄️ Cluster commands
+## ☄️ Cluster commands
 
 <details>
 <summary>
