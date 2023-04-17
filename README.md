@@ -97,36 +97,6 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 
 <br>
 
-### 😍 Create a Simple Job Workflow with a Task
-
-> - Manually trigger
-> - Single task 
-> - Unit Catalog enable
-> - Access control declared
-> - Notebook example
-
-```
-curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' -d '
-{
-    "name": "Job task run - Manually",
-    "existing_cluster_id": "0000-11111111-xxxxx",
-    "access_control_list": [
-            {
-                "user_name": "'"$USER"'",
-                "permission_level": "CAN_MANAGE"
-            }
-        ],
-    "notebook_task": {
-        "task_id": "Your task name",
-        "notebook_path": "/Users/"'"$USER"'"/test"
-    }
-}
-' $API_END_POINT/jobs/create
-```
-
-<br>
-
-
 ### 🌠 Create a Job Workflow with Task
 
 > - Manually trigger
@@ -203,7 +173,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 ```
 curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' -d '
 { 
-  "job_id":193011368839413
+  "job_id":583486613168614
 }
 ' $API_END_POINT/jobs/run-now
 ```
@@ -221,7 +191,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X PATCH -H 'Content-Type: applicatio
             }
         ]
 }
-' $API_END_POINT/preview/permissions/jobs/815516903186825
+' $API_END_POINT/preview/permissions/jobs/583486613168614
 ```
 
 <br>
@@ -233,6 +203,35 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
   "job_id": 2560589442453
 }
 ' $API_END_POINT/jobs/delete
+```
+
+<br>
+
+### 😍 Create a Simple Job Workflow with a Task
+
+> - Manually trigger
+> - Single task 
+> - Unit Catalog enable
+> - Access control declared
+> - Notebook example
+
+```
+curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' -d '
+{
+    "name": "Job task run - Manually",
+    "existing_cluster_id": "01111-0000-abcddd",
+    "access_control_list": [
+            {
+                "user_name": "'"$USER"'",
+                "permission_level": "CAN_MANAGE"
+            }
+        ],
+    "notebook_task": {
+        "task_id": "Your task name",
+        "notebook_path": "/Users/'"$USER"'/test"
+    }
+}
+' $API_END_POINT/jobs/create
 ```
 
 <br>
