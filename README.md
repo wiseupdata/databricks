@@ -56,9 +56,9 @@ Shell commands tested 🎯: <br>
 > credentials.sh [file example]
 ```
 #!/bin/bash
-API_TOKEN=dap111111111111111111111111-1
-API_END_POINT=https://adb-11111111111111.1.azuredatabricks.net/api/2.0
-USER=user@email.net
+API_TOKEN="dap111111111111111111111111-1"
+API_END_POINT="https://adb-11111111111111.1.azuredatabricks.net/api/2.0"
+USER="user@email.net"
 ```
 
 ###  ⏳ Loading the credentials to environment
