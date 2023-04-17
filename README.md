@@ -41,7 +41,7 @@ Shell commands tested 🎯: <br>
 
 <details>
 <summary>
-  Optional, click here ⛏️
+  Optional ⛏️ click!
 </summary>
 
  - jq `sudo apt install jq`
@@ -51,7 +51,7 @@ Shell commands tested 🎯: <br>
 </details>
 <details>
 <summary>
- Credentials set up! Click here 🗝️
+ Credentials set up  🗝️ click!
 </summary>
 
 ### 🛂 Create a file with your credentials 
@@ -105,7 +105,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 
 <details>
 <summary>
-  🌠 Create a Job Workflow with Task, click here
+  Create a Job Workflow with Task 🌠 click!
 </summary>
 
 > - Manually trigger
@@ -179,7 +179,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 
 <details>
 <summary>
-  🎢 Run a job, click here
+   Run a job 🎢 click!
 </summary>
 
 ```
@@ -194,7 +194,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 
 <details>
 <summary>
-  🦕 Update Job permissions, click here
+  Update Job permissions 🦕 click!
 </summary>
 
 ```
@@ -214,7 +214,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X PATCH -H 'Content-Type: applicatio
 
 <details>
 <summary>
-  ☢️ Delete a Job from the workflow., click here
+  Delete a Job from the workflow ☢️ click!
 </summary>
 
 ```
@@ -229,7 +229,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 
 <details>
 <summary>
-  😍 Create a Simple Job Workflow with a Task, click here
+  Create a Simple Job Workflow with a Task 😍 click!
 </summary>
 
 > - Manually trigger
@@ -261,7 +261,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 
 <details>
 <summary>
-  💣 Delete a cluster, click here
+  Delete a cluster 💣 click!
 </summary>
 
 ```
@@ -276,7 +276,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 
 <details>
 <summary>
-   🤖 Get cluster config , click here
+   Get cluster config 🤖 click!
 </summary>
 
 ```
@@ -287,7 +287,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 
 <details>
 <summary>
-   👣 Change the owner of the cluster , click here
+   Change the owner of the cluster 👣 click!
 </summary>
 
 ```
@@ -299,7 +299,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 
 <details>
 <summary>
-   🕵️ Get user permissions levels in the cluster, click here
+   Get user permissions levels in the cluster 🕵️ click!
 </summary>
 
 ```
@@ -309,7 +309,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X GET -H 'Content-Type: application/
 
 <details>
 <summary>
-   🪁 Get permissions to the cluster, click here
+   Get permissions to the cluster 🪁 click!
 </summary>
 
 ```
@@ -321,7 +321,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X GET -H 'Content-Type: application/
 
 <details>
 <summary>
-   🤝 Give permissions to another user in your cluster, click here
+   Give permissions to another user in your cluster 🤝 click!
 </summary>
 
 ```
@@ -338,7 +338,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X PATCH -H 'Content-Type: applicatio
 
 <details>
 <summary>
-  API cluster examples, click here🔗
+  API cluster examples click!🔗
 </summary>
 
 ### Under construction 🛠️
