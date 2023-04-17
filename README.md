@@ -109,7 +109,7 @@ curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application
 curl -H "Authorization: Bearer $API_TOKEN" -X POST -H 'Content-Type: application/json' -d '
 {
     "name": "Job task run - Manually",
-    "existing_cluster_id": "0131-135623-mx9o58uk",
+    "existing_cluster_id": "0000-11111111-xxxxx",
     "access_control_list": [
             {
                 "user_name": "'"$USER"'",
