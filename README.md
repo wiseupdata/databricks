@@ -361,6 +361,8 @@ echo "wait"
 1. [Delta rollback](https://delta.io/blog/2022-10-03-rollback-delta-lake-restore/)
 1. [API examples by Databricks - Create Jobs](https://docs.databricks.com/dev-tools/api/latest/jobs.html#operation/JobsCreate)
 1. [Emojis](https://github.com/wiseupdata/emojis)
+1. [Databricks connect](https://learn.microsoft.com/en-gb/azure/databricks/dev-tools/databricks-connect)
+1. [Notebooks Parallel cells](https://learn.microsoft.com/en-gb/azure/databricks/notebooks/notebooks-code#sql-run-now)
 
 <br><br>
 ---
